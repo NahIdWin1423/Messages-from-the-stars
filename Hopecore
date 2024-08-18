@@ -1,0 +1,19 @@
+// Function to generate random messages from stars
+function getStarMessage() {
+    const messages = [
+        "The universe whispers secrets in the silence of the night.",
+        "Every star is a story waiting to be told.",
+        "Look up; the stars are the dreams of the past.",
+        "In the vastness of space, you are never alone.",
+        "Let your heart be your compass, guided by the stars.",
+        "The light of a star is a reminder of hope and possibility.",
+        "Stars are the dreams of those who dared to reach for the sky."
+    ];
+
+    // Generate a random index to select a message
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    return messages[randomIndex];
+}
+
+// Display a random star message
+console.log(getStarMessage());
